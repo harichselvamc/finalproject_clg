@@ -113,6 +113,17 @@
         color: #fff;
         border-color: var(--primary-color);
     }
+    .post-card-list img {
+    width: 100%;
+    height: auto;  /* Maintain aspect ratio */
+    object-fit: contain; /* Ensures the entire image is visible */
+    transition: transform 0.3s ease;
+}
+
+.post-card-list img:hover {
+    transform: scale(1.05);
+}
+
 </style>
 
 <div class="container">
